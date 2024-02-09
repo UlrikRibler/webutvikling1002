@@ -1,0 +1,52 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 50px 20px;
+}
+
+.red-box {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  display: flex;
+  margin: 0 20px; 
+  border-radius: 10px; 
+}
+
+.info-box {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1; 
+  margin: 0 5px; 
+}
+
+.vector-image {
+  width: 50px; 
+  height: auto;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 0.9em; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .red-box {
+    flex-direction: column;
+  }
+
+  .info-box {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; 
+  }
+}

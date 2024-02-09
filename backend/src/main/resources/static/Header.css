@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0; /* Adjust as needed */
+  background-color: white; /* Separate background color from Navbar */
+}
+
+.categories-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0; /* Adjust as needed */
+}
+
+.category-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap categories for smaller screens */
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.category-icon {
+  background-color: transparent;
+  width: 40px; /* Adjust size of the circle */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.category-name {
+  color: #333; /* Text color */
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.category-icon:hover {
+  /* Optional: Add hover effect for the icons */
+  background-color: #eaeaea; /* Light grey background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .category-buttons {
+    justify-content: center;
+  }
+}
